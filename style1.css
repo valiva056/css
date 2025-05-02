@@ -1,0 +1,20 @@
+.first-container{
+    background-color:cyan;
+color:crimson;
+padding: 0px 5% 6% 25px;
+margin-bottom:25px;
+display: inline-block;
+border:5px solid black
+height:250px;
+
+}
+.second-container{
+    background-color:cyan;
+color:crimson;
+padding: 0px 5% 6% 25px;
+margin-bottom:25px;
+display: inline-block;
+border:5px solid black
+height:250px;
+
+}
