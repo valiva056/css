@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <style>
+    *{
+        margin:10px;
+        padding:10px;
+        box-sizing:border-box;
+    }
+    .parent{
+        height:35vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row;
+        justify-content:start;
+        align-content:start;
+        align-items:start;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    } 
+    .parent1{
+        height:35vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+        align-content:start;
+        align-items:start;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    } 
+     .parent2{
+        height:35vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content:start;
+        align-content:start;
+        align-items:start;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }  
+    .parent3{
+        height:35vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content:start;
+        align-content:start;
+        align-items:start;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    } 
+     .parent4{
+        height:20vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:flex-start;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    } 
+   
+    .parent5{
+        height:30vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }  
+      .parent6{
+        height:30vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-end;
+        align-items:flex-end;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }  
+    .parent7{
+        height:30vh;
+        width:55vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:center;
+        align-items:stretch;
+        gap:5px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }     
+    .parent8{
+        height:40vh;
+        width:60vh;
+        border:2px solid black;
+        display:flex;
+        align-items:flex-start;
+        justify-content:flex-start;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }   -->
+     .parent9{
+        height:40vh;
+        width:60vh;
+        border:2px solid black;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+
+    .parent10{
+        height:40vh;
+        width:60vh;
+        border:2px solid black;
+        display:flex;
+        align-items:flex-end;
+        justify-content:flex-end;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+     .parent11{
+        height:40vh;
+        width:60vh;
+        border:2px solid black;
+        display:flex;
+        align-items:space-between;
+        justify-content:space-between;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+    .parent12{
+        height:40vh;
+        width:60vh;
+        border:2px solid black;
+        display:flex;
+        align-items:space-around;
+        justify-content:space-around;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+     .parent13{
+        height:40vh;
+        width:60vh;
+        border:2px solid black;
+        display:flex;
+        align-items:space-evenly;
+        justify-content:space-evenly;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }   
+    .parent14{
+        height:40vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        align-content:flex-start;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+    .parent15{
+        height:40vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        align-content:center;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+    .parent16{
+        height:40vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        align-content:flex-end;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+    .parent17{
+        height:40vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row;
+        align-content:space-between;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+    .parent18{
+        height:40vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row;
+        align-content:space-around;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+    .parent19{
+        height:40vh;
+        width:50vh;
+        border:2px solid black;
+        display:flex;
+        flex-direction:row;
+        align-content:stretch;
+        gap:2px;
+        row-gap: 1;
+        flex-wrap:wrap;
+    }    
+    .child1{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+   
+    }
+    
+    .child2{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+       
+    }
+    .child3{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+       
+    }
+    .child4{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+      
+    }
+    
+    .child5{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+      
+    }
+    .child6{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+      
+    }
+    .child7{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+
+    }
+    .child8{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+
+    }
+    .child9{
+        height:5vh;
+        width:10vh;
+        background-color: blue;
+        border:2px solid green;
+
+    }
+</style>
+</head>
+<body>
+    <h1>flex-direction:row</h1>
+    <div class="parent">
+             <div class="child1">1</div>
+             <div class="child2">2</div>
+             <div class="child3">3</div>
+             <div class="child4">4</div>
+             <div class="child5">5</div>
+             <div class="child6">6</div>
+             <div class="child7">7</div>
+             <div class="child8">8</div>
+             <div class="child9">9</div>
+</div>
+
+<h1>flex-direction:coloumn</h1>
+ <div class="parent1">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+    <div class="child4">4</div>
+    <div class="child5">5</div>
+    <div class="child6">6</div>
+    <div class="child7">7</div>
+    <div class="child8">8</div>
+    <div class="child9">9</div>
+ </div>
+
+<h1>flex-direction:row-reverse</h1>
+ <div class="parent2">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+    <div class="child4">4</div>
+    <div class="child5">5</div>
+    <div class="child6">6</div>
+    <div class="child7">7</div>
+    <div class="child8">8</div>
+    <div class="child9">9</div>
+ </div>
+
+ <h1>flex-direction:column-reverse</h1>
+ <div class="parent3">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+    <div class="child4">4</div>
+    <div class="child5">5</div>
+    <div class="child6">6</div>
+    <div class="child7">7</div>
+    <div class="child8">8</div>
+    <div class="child9">9</div>
+ </div>
+
+ <h1>align-items:flex-start</h1>
+ <div class="parent4">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+
+ <h1>align-items:flex-center</h1>
+ <div class="parent5">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>align-items:flex-end</h1>
+ <div class="parent6">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>align-items:stretch</h1>
+ <div class="parent7">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>justify-content:flex-start</h1>
+ <div class="parent8">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>justify-content:center</h1>
+ <div class="parent9">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>justify-content:flex-end</h1>
+ <div class="parent10">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>justify-content:space-between</h1>
+ <div class="parent11">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>justify-content:space-around</h1>
+ <div class="parent12">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>justify-content:space-evenly</h1>
+ <div class="parent13">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>align-content:flex-start</h1>
+ <div class="parent14">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ 
+ <h1>align-content:center</h1>
+ <div class="parent15">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>align-content:flex-end</h1>
+ <div class="parent16">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ 
+ <h1>align-content:space-between</h1>
+ <div class="parent17">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>align-content:space-around</h1>
+ <div class="parent18">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+
+ <h1>align-content:stretch</h1>
+ <div class="parent19">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+    <div class="child3">3</div>
+ </div>
+</body>
+</html>
