@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+.rotate{
+    background-color:brown;
+    height: 50px;
+    width: 100px; 
+    border-radius: 20px 20px 20px 20px;
+    display: inline;
+}
+.image{
+    
+    margin-top: 200px;
+}
+.box1:hover ~ .image{
+    transform: rotate(90deg);
+
+}
+.box2:hover ~ .image{
+    transform: scale(2);
+
+}
+.box3:hover ~ .image{
+    transform: skew(45deg);
+
+}
+.box4:hover ~ .image{
+    transform: Translate(100px,100px);
+
+}
+    </style>
+</head>
+<body>
+    <form class="hel">
+    
+        <input  type="button"  class="rotate box1" value="rotate" target="hel" >
+        <input  type="button"  class="rotate box2" value="scale">
+        <input  type="button"  class="rotate box3" value="skew">
+        <input  type="button"  class="rotate box4" value="Translate" ><br>
+       <img class="image" src="./arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.avif" width="400px" height="300px" alt="birthday girl">
+        
+    </form>
+</body>
+</html>
