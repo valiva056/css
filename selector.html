@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Assignment</title>
+  <style>
+    /* 1. Image hover effect */
+    .hover-image {
+      width: 200px;
+      transition:filter 0.3s ease;
+      
+    }
+
+    .hover-image:hover {
+      filter:brightness(0.6); 
+      background-color:aqua;
+    } 
+
+    /* 2. Link styles */
+    a {
+      color: blue;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* 3. Alternating list item styles */
+  .odd {
+      background-color: #f0f0f0;
+      font-style: italic;
+    }
+
+    .even {
+      background-color: #d0eaff;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Image Hover Color Change</h2>
+  <img src="./arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.avif" alt="Sample Image" class="hover-image">
+
+  <h2>2. Link Styling</h2>
+  <p>Visit <a href="https://www.amazon.in/gp/bestsellers/books/4149502031"><b>amagon bestseller</b></a></p>
+
+  <h2>3. Alternating Row List</h2>
+  <ul class="alternate-list">
+    <li class="odd">Row 1</li>
+    <li class="even">Row 2</li>
+    <li class="odd">Row 3</li>
+    <li class="even">Row 4</li>
+    <li class="odd">Row 5</li>
+  </ul>
+
+</body>
+</html>
+
+
+
+
+   
